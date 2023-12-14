@@ -38,7 +38,7 @@ const Navbar = () => {
           <a href="##">Contact</a>
         </li>
       </ul>
-      <h1 className="logo">Navbar</h1>
+      <h1 className="logo-navbar">Navbar</h1>
     </div>
   </nav>
 </>
