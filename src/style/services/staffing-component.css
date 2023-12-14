@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caveat:wght@400;500;600&family=Crimson+Pro:wght@300&family=Dancing+Script:wght@400;500;600&family=Indie+Flower&family=Kalnia:wght@300&family=Mina&family=Nova+Square&family=Pacifico&family=Rubik&family=Shadows+Into+Light&family=Sono:wght@200;500&display=swap');
+
+.service-component-section{
+    padding: 10px 0px;
+    border: 2px solid blue;
+}
+.service-component-container{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid rgb(78, 82, 82);
+    border-top: 2px solid rgb(78, 82, 82);
+    border-bottom: 2px solid rgb(78, 82, 82);
+    font-size: 1.3rem;
+    width: 310px;
+    max-height: 243px;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-family: 'Mina', sans-serif;
+}
+
+.service-component-body{
+    border: 2px solid black;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-family: 'Caveat', cursive;
+}
+.service-component-body{
+    display: flex;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+.service-component-box:hover{
+    border-left: 2px solid azure;
+    background-color: rgba(187, 203, 203, 0.1);
+    /* color: brown; */
+}
+.service-component-box{
+    display: flex;
+    /* border: 2px solid red; */
+    width: auto;
+    height: 40px;
+    border-left: 0.2px dotted azure;
+    }
+.service-component-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+    margin: 0px 4px;
+    width: 10% ;
+}
+.service-component-title{
+    margin: 0px 0px;
+    display: flex;
+    align-items: center;
+}
+.service-component-details{
+    /* border: 2px solid azure; */
+    margin: 10px;
+    margin-top: 0px;
+    width: 60vw;
+    display: none;
+}
+.active{
+    display: flex;
+    flex-direction: column;
+}
+.component-link{
+    text-decoration: none;
+    color:inherit;
+}
+.component-title{
+    font-size: 3rem;
+}
+.service-component-details h2{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 0px;
+    padding: 5px;
+    font-family: 'Mina', sans-serif;
+    font-weight: bold;
+    color: #3b7fda;
+}
+.ser-comp-det-img{
+    /* background: lightblue url("../../img/Automobile.jpg") no-repeat center center/cover; */
+    z-index: 3;
+    width: auto;
+    height: 300px;
+    padding: 10px 10px;
+    margin: 10px;
+}
+.ser-comp-det-img img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.ser-comp-det-data{
+    padding: 10px;
+    font-size: 1.4rem;
+    font-family: 'Crimson Pro', serif;
+    text-align: justify;
+}
+@media screen and (max-width: 1000px){
+    .service-component-container{
+        font-size: 1.1rem;
+        width: 300px;
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (max-width: 860px){
+    .service-component-container{
+        font-size: 1.04rem;
+        width: 280px;
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 800px){
+    .service-component-details h2 {
+        font-size: 1.7rem;
+        -webkit-text-stroke: 2px transparent;
+        -webkit-text-fill-color: #3b7fda;
+        color: #3b7fda;
+    }
+    .service-component-details{
+        width: 95vw;
+    }
+}

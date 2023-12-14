@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caveat:wght@400;500;600&family=Crimson+Pro:wght@300&family=Dancing+Script:wght@400;500;600&family=Indie+Flower&family=Kalnia:wght@300&family=Mina&family=Nova+Square&family=Pacifico&family=Rubik&family=Shadows+Into+Light&family=Sono:wght@200;500&display=swap');
+.container{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.container h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-family: 'Caveat', cursive;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .services .card{
+    width: 330px;
+    text-align: center;
+    background: white;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20px;
+    border: 1px dotted gray;
+}
+
+.container .services .card:hover{
+    background: chocolate;
+}
+
+.container .services .card .content{
+    transition: 0.3s;
+}
+
+.container .services .card:hover .content{
+    transform: scale(1.07);
+}
+
+.container .services .card .content .icon{
+    padding: 5px 0;
+    color: rgb(0, 0, 0);
+}
+
+.container .services .card .content .icon i{
+    font-size: 2.5rem;
+}
+
+.container .services .card:hover .content .title{
+    color: white;
+}
+
+.container .services .card .content .title{
+    padding: 5px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: chocolate;
+    transition: 0.3s;
+    font-family: 'Mina', sans-serif;
+}
+.content>p{
+    color: black;
+    font-family: 'Crimson Pro', serif;
+}
