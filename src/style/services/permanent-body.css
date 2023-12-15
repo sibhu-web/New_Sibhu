@@ -13,7 +13,7 @@
     border:2px solid red;
     display: flex;
     flex-wrap: wrap-reverse;
-    
+    justify-content: center;
 }
 .body-left{
     width: 40vw;
@@ -26,5 +26,5 @@
     min-width: 400px;
     height: 300px;
     border: 2px solid blue;
-    background: lightblue url("../../../public/images/Staffing.png") no-repeat center center/cover;
+    background: white url("../../../public/images/Staffing.png") no-repeat center center/cover;
 }
