@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caveat:wght@400;500;600&family=Crimson+Pro:wght@300&family=Dancing+Script:wght@400;500;600&family=Indie+Flower&family=Kalnia:wght@300&family=Mina&family=Nova+Square&family=Pacifico&family=Rubik&family=Shadows+Into+Light&family=Sono:wght@200;500&display=swap');
+
+.permanent-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-family: 'Caveat', cursive;
+}
+.permanent-body{
+    width: 100%;
+    border:2px solid red;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+}
+.body-left{
+    width: 40vw;
+    height: 400px;
+    border: 2px solid black;
+}
+.body-right{
+    margin: 10px;
+    margin-top: 0px;
+    min-width: 400px;
+    height: 300px;
+    border: 2px solid blue;
+    background: lightblue url("../../../public/images/Staffing.png") no-repeat center center/cover;
+}
