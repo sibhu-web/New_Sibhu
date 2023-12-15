@@ -36,23 +36,23 @@ const Clint = () => {
       <div className="row">
         <div className="col-md-12">
           <Slider {...sliderSettings}>
-            <div>
+            <div  className="clints-name">
               <h4>Item 1</h4>
               <p>Content for item 1 goes here.</p>
             </div>
-            <div>
+            <div className="clints-name">
               <h4>Item 2</h4>
               <p>Content for item 2 goes here.</p>
             </div>
-            <div>
+            <div className="clints-name">
               <h4>Item 3</h4>
               <p>Content for item 1 goes here.</p>
             </div>
-            <div>
+            <div className="clints-name">
               <h4>Item 2</h4>
               <p>Content for item 2 goes here.</p>
             </div>
-            <div>
+            <div className="clints-name">
               <h4>Item 3</h4>
               <p>Content for item 3 goes here.</p>
             </div>
