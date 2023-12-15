@@ -11,4 +11,4 @@ function Permanent() {
   );
 }
 
-export default Permanent
+export default Permanent;

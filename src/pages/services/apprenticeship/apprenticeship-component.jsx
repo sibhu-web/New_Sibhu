@@ -6,13 +6,13 @@ import "font-awesome/css/font-awesome.min.css";
 function Apprenticeshipcomponent({selectedComponentId}) {
   const [activeElement, setActiveElement] = useState(null);
   useEffect(() => {
-    // Move the logic inside the useEffect hook
-    const ex = document.querySelector(`.animate-2`);
+    // Select all elements with the class 'animate-2'
+    const elements = document.querySelectorAll('.animate-2');
   
-    // Check if the element exists before manipulating it
-    if (ex) {
-      ex.classList.add("active-2");
-    }
+    // Loop through the elements and add the 'active-2' class
+    elements.forEach((element) => {
+      element.classList.add('active-2');
+    });
   }, []);
 
   useEffect(() => {
@@ -49,8 +49,8 @@ function Apprenticeshipcomponent({selectedComponentId}) {
     <div className="service-component-section ">
       <h1 className="title">Apprenticeship Services</h1>
       <div className="border" />
-      <div className="service-component-body animate-2 fade-left-2">
-        <div className="service-component-container">
+      <div className="service-component-body  ">
+        <div className="service-component-container animate-2 fade-left-2">
           <div className="service-component-box" id="box1" onClick={showdetails}>
             <div className="service-component-icon">
               <i className="fa fa-code" />
@@ -100,7 +100,7 @@ function Apprenticeshipcomponent({selectedComponentId}) {
                 </div>
           </div>
         </div>
-        <div className="service-component-details" id="box1-det">
+        <div className="service-component-details animate-2 fade-right-2" id="box1-det">
           <h2>Web Development</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
@@ -119,7 +119,7 @@ function Apprenticeshipcomponent({selectedComponentId}) {
             eius.
           </div>
         </div>
-        <div className="service-component-details" id="box2-det">
+        <div className="service-component-details  animate-2 fade-right-2" id="box2-det">
           <h2>App Development</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
@@ -138,7 +138,7 @@ function Apprenticeshipcomponent({selectedComponentId}) {
             eius.
           </div>
         </div>
-        <div className="service-component-details " id="box3-det">
+        <div className="service-component-details animate-2 fade-right-2 " id="box3-det">
           <h2>Web Design</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
@@ -157,7 +157,7 @@ function Apprenticeshipcomponent({selectedComponentId}) {
             eius.
           </div>
         </div>
-        <div className="service-component-details " id="box4-det">
+        <div className="service-component-details  animate-2 fade-right-2 " id="box4-det">
           <h2>Responsive Design</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
@@ -176,7 +176,7 @@ function Apprenticeshipcomponent({selectedComponentId}) {
             eius.
           </div>
         </div>
-        <div className="service-component-details " id="box5-det">
+        <div className="service-component-details animate-2 fade-right-2" id="box5-det">
           <h2>Advertising</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
@@ -195,7 +195,7 @@ function Apprenticeshipcomponent({selectedComponentId}) {
             eius.
           </div>
         </div>
-        <div className="service-component-details" id="box6-det">
+        <div className="service-component-details animate-2 fade-right-2" id="box6-det">
           <h2>Wordpress</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">

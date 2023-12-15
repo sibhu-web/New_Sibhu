@@ -1,8 +1,9 @@
 import React,{useEffect} from "react";
 import "../../../style/services/permanent-body.css";
+import "../../../style/services/flexi-body.css";
 import "../../../style/services/staffing-component.css";
 import "font-awesome/css/font-awesome.min.css";
-function Permanentbody(){
+function Flexibody(){
       useEffect(() => {
         // Select all elements with the class 'animate-2'
         const elements = document.querySelectorAll('.animate-2');
@@ -14,10 +15,9 @@ function Permanentbody(){
       }, []);
     return(
         <section className="permanent-section">
-            <h2>Permanent Staffing</h2>
+            <h2>Flexi Staffing</h2>
             <div className="permanent-body">
                 <div className="body-left animate-2 fade-left-2">
-                    <h3></h3>
                     <div className="body-left-det">
                     When you look to hire candidate on your payroll on a permanent basis, we develop a customized recruiting plan according to the client’s requirement by understanding the position’s roles and responsibilities.
 
@@ -41,9 +41,9 @@ function Permanentbody(){
                         <li>Increase quality of workforce</li>
                     </ul>
                 </div>
-                <div className="body-right animate-2 fade-right-2 "></div>
+                <div className="body-right animate-2 fade-right-2 " id='flexi'></div>
             </div>
         </section>
     );
 }
-export default Permanentbody;
+export default Flexibody;

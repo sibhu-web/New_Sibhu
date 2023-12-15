@@ -10,21 +10,70 @@
 }
 .permanent-body{
     width: 100%;
-    border:2px solid red;
+    /* border:2px solid red; */
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
+    align-items: flex-end;
 }
 .body-left{
     width: 40vw;
-    height: 400px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    margin: 20px;
+    padding: 5px 12px;
+    font-size: 1.4rem;
+    font-family: 'Crimson Pro', serif;
+    text-align: justify;
+}
+.body-left-det{
+    margin: 15px auto;
+}
+.body-left-list{
+    color: chocolate;
 }
 .body-right{
-    margin: 10px;
-    margin-top: 0px;
-    min-width: 400px;
+    margin: 50px 15px;
+    width: 450px;
     height: 300px;
-    border: 2px solid blue;
-    background: white url("../../../public/images/Staffing.png") no-repeat center center/cover;
+    /* border: 2px solid blue; */
+    border-radius: 5px;
+    background: white url("../../../public/images/permanent.jpg") no-repeat center center/cover;
+    /* background-size: contain; */
+    background-position: top;
+}
+@media screen and (max-width: 1000px){
+    html{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 900px){
+    .body-left{
+        width: 90vw;
+        padding: 5px 20px;
+    }
+}
+@media screen and (max-width: 500px){
+    html{
+        font-size: 13px;
+    }
+    .permanent-section h2{
+        font-size: 2.5rem;
+    }
+    .body-right{
+        width: 90vw;
+        background-size: contain;
+        margin-bottom: 0px;
+        height: 40vw;
+    }
+}
+@media screen and (max-width: 400px){
+    html{
+        font-size: 12px;
+    }
+    .permanent-section h2{
+        font-size: 2.3rem;
+    }
+    .body-right{
+        height: 35vw;
+    }
 }
