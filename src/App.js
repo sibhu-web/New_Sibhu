@@ -6,7 +6,8 @@ import Staffing from './pages/services/staffing/staffing';
 function App() {
   return (
     <div className="App">
-      <Staffing/>
+      <Apprenticeship/>
+      {/* <Staffing/> */}
     </div>
   );
 }

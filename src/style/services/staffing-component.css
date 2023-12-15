@@ -3,7 +3,7 @@
 
 .service-component-section{
     padding: 10px 0px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 .service-component-container{
     display: flex;
@@ -19,9 +19,9 @@
     font-family: 'Mina', sans-serif;
 }
 
-.service-component-body{
+/* .service-component-body{
     border: 2px solid black;
-}
+} */
 .title{
     text-align: center;
     text-transform: uppercase;
@@ -46,7 +46,8 @@
     /* border: 2px solid red; */
     width: auto;
     height: 40px;
-    border-left: 0.2px dotted azure;
+    border-left: 0.2px dotted rgb(97, 101, 101);
+    cursor: pointer;
     }
 .service-component-icon{
     display: flex;
@@ -60,6 +61,7 @@
     margin: 0px 0px;
     display: flex;
     align-items: center;
+    color: chocolate;
 }
 .service-component-details{
     /* border: 2px solid azure; */
@@ -134,3 +136,36 @@
         width: 95vw;
     }
 }
+.animate-2{
+    position: relative;
+    opacity: 0;
+}
+.animate-2.active-2{
+    opacity: 1;
+}
+.active-2.fade-left-2{
+    animation: fade-left-2 1s ease-in;
+}
+@keyframes fade-left-2 {
+    0% {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.active-2.fade-right-2{
+    animation: fade-right-2 1s ease-in;
+}
+@keyframes fade-right-2 {
+    0% {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

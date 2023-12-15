@@ -1,79 +1,94 @@
-import React from "react";
+import React,{useState} from "react";
 // import { Outlet, Link } from "react-router-dom";
-import "../../../style/services/apprenticeship-body.css";
+import "../../../style/services/staffing-body.css";
 import "font-awesome/css/font-awesome.min.css";
+import Apprenticeshipcomponent from "./apprenticeship-component";
 
 function Apprenticeshipbody() {
+    const [componentsOpen, setcomponentsOpen] = useState(false);
+    const [selectedComponentId, setSelectedComponentId] = useState(null);
+        const opencomponent = (e) => {
+          setcomponentsOpen(!componentsOpen);
+          const targetElement2 = e.currentTarget;
+          setSelectedComponentId(targetElement2.id);
+          const mainpage=document.querySelector(`.staffing-container`);
+          mainpage.style.display='none';
+        };
   return (
-    <div className="container">
+    <>
+    {
+      componentsOpen && 
+      <Apprenticeshipcomponent toggle={opencomponent} selectedComponentId={selectedComponentId}/>
+    }
+    <div className="staffing-container">
       <h2>Apprenticeship Services</h2>
-      <section className="services">
-        <div className="card">
-          <div className="content">
-            <div className="icon">
+      <section className="staffing-services">
+        <div className="staffing-card" id="box1" onClick={opencomponent}>
+          <div className="staffing-content">
+            <div className="staffing-icon">
               <i className="fa fa-code" />
             </div>
-            <div className="title">Web Development</div>
+            <div className="staffing-title">Web Development</div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
               reprehenderit.
             </p>
           </div>
         </div>
-        <div className="card">
-          <div className="content">
-            <div className="icon">
+        <div className="staffing-card" id="box2" onClick={opencomponent}>
+          <div className="staffing-content">
+            <div className="staffing-icon">
               <i className="fa fa-mobile" />
             </div>
-            <div className="title">App Development</div>
+            <div className="staffing-title">App Development</div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
               reprehenderit.
             </p>
           </div>
         </div>
-        <div className="card">
-          <div className="content">
-            <div className="icon">
+        <div className="staffing-card" id="box3" onClick={opencomponent}>
+          <div className="staffing-content">
+            <div className="staffing-icon">
               <i className="fa fa-paint-brush" />
             </div>
-            <div className="title">Web Design </div>
+            <div className="staffing-title">Web Design</div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
               reprehenderit.
             </p>
           </div>
         </div>
-        <div className="card">
-          <div className="content">
-            <div className="icon">
+        <div className="staffing-card" id="box4" onClick={opencomponent}>
+          <div className="staffing-content">
+            <div className="staffing-icon">
               <i className="fa fa-laptop" />
             </div>
-            <div className="title">Responsive Design </div>
+            <div className="staffing-title">Responsive Design</div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
               reprehenderit.
             </p>
           </div>
         </div>
-        <div className="card">
-          <div className="content">
-            <div className="icon">
+        <div className="staffing-card" id="box5" onClick={opencomponent}>
+          <div className="staffing-content">
+            <div className="staffing-icon">
               <i className="fa fa-line-chart" />
             </div>
-            <div className="title">Advertising </div>
+            <div className="staffing-title">Advertising</div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
               reprehenderit.
             </p>
           </div>
         </div>
-        <div className="card">
-          <div className="content">
-            <div className="icon">
+        <div className="staffing-card" id="box6" onClick={opencomponent}>
+          <div className="staffing-content">
+            <div className="staffing-icon">
               <i className="fa fa-wordpress" />
             </div>
-            <div className="title">Wordpress</div>
+            <div className="staffing-title">Wordpress</div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
               reprehenderit.
@@ -82,6 +97,7 @@ function Apprenticeshipbody() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 

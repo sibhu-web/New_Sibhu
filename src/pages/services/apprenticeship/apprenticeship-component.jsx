@@ -3,7 +3,7 @@ import React,{useState,useEffect} from "react";
 import "../../../style/services/staffing-component.css";
 import "font-awesome/css/font-awesome.min.css";
 
-function Staffingcomponent({selectedComponentId}) {
+function Apprenticeshipcomponent({selectedComponentId}) {
   const [activeElement, setActiveElement] = useState(null);
   useEffect(() => {
     // Move the logic inside the useEffect hook
@@ -47,61 +47,61 @@ function Staffingcomponent({selectedComponentId}) {
   };
   return (
     <div className="service-component-section ">
-      <h1 className="title">Staffing Services</h1>
+      <h1 className="title">Apprenticeship Services</h1>
       <div className="border" />
       <div className="service-component-body animate-2 fade-left-2">
         <div className="service-component-container">
           <div className="service-component-box" id="box1" onClick={showdetails}>
             <div className="service-component-icon">
-              <i className="fa fa-paint-brush" />
+              <i className="fa fa-code" />
             </div>
             <div className="service-component-title">
-              Automobile /Automative
+              Web Development
             </div>
           </div>
           <div className="service-component-box" id="box2" onClick={showdetails}>
             <div className="service-component-icon">
-              <i className="fa fa-code" />
+              <i className="fa fa-mobile" />
             </div>
             <div className="service-component-title">
-              Information Technology
+              App Development
             </div>
           </div>
           <div className="service-component-box" id="box3" onClick={showdetails}>
             <div className="service-component-icon">
-              <i className="fa fa-code" />
+              <i className="fa fa-paint-brush" />
             </div>
             <div className="service-component-title">
-                Financial Services
+                Web Design
                 </div>
           </div>
           <div className="service-component-box" id="box4" onClick={showdetails}>
             <div className="service-component-icon">
-              <i className="fa fa-object-ungroup" />
+              <i className="fa fa-laptop" />
             </div>
             <div className="service-component-title">
-                FMCG
+                Responsive Design
                 </div>
           </div>
           <div className="service-component-box" id="box5" onClick={showdetails}>
             <div className="service-component-icon">
-              <i className="fa fa-database" />
+              <i className="fa fa-line-chart" />
             </div>
             <div className="service-component-title">
-                Startup
+                Advertising
                 </div>
           </div>
           <div className="service-component-box" id="box6" onClick={showdetails}>
             <div className="service-component-icon">
-              <i className="fa fa-android" />
+              <i className="fa fa-wordpress" />
             </div>
             <div className="service-component-title">
-                Manufacturing
+                Wordpress
                 </div>
           </div>
         </div>
         <div className="service-component-details" id="box1-det">
-          <h2>Automobile/ Automative</h2>
+          <h2>Web Development</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -120,7 +120,7 @@ function Staffingcomponent({selectedComponentId}) {
           </div>
         </div>
         <div className="service-component-details" id="box2-det">
-          <h2>Information Technology</h2>
+          <h2>App Development</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -139,7 +139,7 @@ function Staffingcomponent({selectedComponentId}) {
           </div>
         </div>
         <div className="service-component-details " id="box3-det">
-          <h2>Financial Services</h2>
+          <h2>Web Design</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -158,7 +158,7 @@ function Staffingcomponent({selectedComponentId}) {
           </div>
         </div>
         <div className="service-component-details " id="box4-det">
-          <h2>FMCG</h2>
+          <h2>Responsive Design</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -177,7 +177,7 @@ function Staffingcomponent({selectedComponentId}) {
           </div>
         </div>
         <div className="service-component-details " id="box5-det">
-          <h2>Startup</h2>
+          <h2>Advertising</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -196,7 +196,7 @@ function Staffingcomponent({selectedComponentId}) {
           </div>
         </div>
         <div className="service-component-details" id="box6-det">
-          <h2>Manufacturing</h2>
+          <h2>Wordpress</h2>
           <div className="ser-comp-det-img" id="automobile"></div>
           <div className="ser-comp-det-data">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -219,4 +219,4 @@ function Staffingcomponent({selectedComponentId}) {
   );
 }
 
-export default Staffingcomponent;
+export default Apprenticeshipcomponent;

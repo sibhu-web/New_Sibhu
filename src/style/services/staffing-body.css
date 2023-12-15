@@ -1,26 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caveat:wght@400;500;600&family=Crimson+Pro:wght@300&family=Dancing+Script:wght@400;500;600&family=Indie+Flower&family=Kalnia:wght@300&family=Mina&family=Nova+Square&family=Pacifico&family=Rubik&family=Shadows+Into+Light&family=Sono:wght@200;500&display=swap');
-.staffing-container{
+.staffing-container {
     width: 100%;
-    /* border: 2px solid red; */
-}
-
-.staffing-container h2{
+  }
+  
+  .staffing-container h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
     margin-bottom: 25px;
     font-family: 'Caveat', cursive;
-}
-
-.staffing-services{
+  }
+  
+  .staffing-services {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-}
-
-.staffing-container .staffing-services .staffing-card{
+  }
+  
+  .staffing-container .staffing-services .staffing-card {
     width: 330px;
     text-align: center;
     background: white;
@@ -31,48 +30,84 @@
     transition: 0.3s;
     margin: 20px;
     border: 1px dotted gray;
-}
-
-.staffing-container .staffing-services .staffing-card:hover{
+    opacity: 1;
+  }
+  
+  .staffing-container .staffing-services .staffing-card:hover {
     background: chocolate;
-}
-
-.staffing-container .staffing-services .staffing-card .staffing-content{
+  }
+  
+  .staffing-container .staffing-services .staffing-card .staffing-content {
     transition: 0.3s;
-}
-
-.staffing-container .staffing-services .staffing-card:hover .staffing-content{
+  }
+  
+  .staffing-container .staffing-services .staffing-card:hover .staffing-content {
     transform: scale(1.07);
-}
-
-.staffing-container .staffing-services .staffing-card .staffing-content .staffing-icon{
+  }
+  
+  .staffing-container .staffing-services .staffing-card .staffing-content .staffing-icon {
     padding: 5px 0;
     color: rgb(0, 0, 0);
-}
-
-.staffing-container .staffing-services .staffing-card .staffing-content .staffing-icon i{
+  }
+  
+  .staffing-container .staffing-services .staffing-card .staffing-content .staffing-icon i {
     font-size: 2.5rem;
-}
-
-.staffing-container .staffing-services .staffing-card:hover .staffing-content .staffing-title{
+  }
+  
+  .staffing-container .staffing-services .staffing-card:hover .staffing-content .staffing-title {
     color: white;
-}
-
-.staffing-container .staffing-services .staffing-card .staffing-content .staffing-title{
+  }
+  
+  .staffing-container .staffing-services .staffing-card .staffing-content .staffing-title {
     padding: 5px 0;
     font-size: 1.5rem;
     font-weight: 500;
     color: chocolate;
     transition: 0.3s;
     font-family: 'Mina', sans-serif;
-}
-.staffing-content>p{
+  }
+  
+  .staffing-content > p {
     color: black;
     font-family: 'Crimson Pro', serif;
-}
-.staffing-services-details{
+  }
+  
+  .staffing-services-details {
     display: none;
-}
-.abc{
-    display: none;
-}
+  }
+  
+  .staffing-container.animate {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+  }
+  
+  .staffing-container.fade-left {
+    animation: fade-left 1s ease-out;
+  }
+  
+  @keyframes fade-left {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+  }
+  
+  .staffing-container.fade-right {
+    animation: fade-right 1s ease-out;
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+  }
+  
