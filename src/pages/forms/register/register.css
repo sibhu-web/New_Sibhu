@@ -14,7 +14,8 @@ body {
   
   .form_wrapper {
     background: #fff;
-    width: 400px;
+    width: 650px;
+    height: 72vh;
     max-width: 100%;
     box-sizing: border-box;
     padding: 25px;
