@@ -1,23 +1,23 @@
+import logo from './logo.svg';
 import './App.css';
-import NAPS from './pages/services/NAPS/NAPS';
-import NATS from './pages/services/NATS/NATS';
-// import About from './pages/about/about';
-// import Apprenticeship from './pages/services/apprenticeship/apprenticeship';
-// import Flexi from './pages/services/flexi-staffing/flexi';
-// import Manpower from './pages/services/manpower-outsourcing/manpower';
-import Permanent from './pages/services/permanent-staffing/permanent';
-// import Staffing from './pages/services/staffing/staffing';
 
 function App() {
   return (
     <div className="App">
-      {/* <Apprenticeship/> */}
-      {/* <Staffing/> */}
-      {/* <Permanent/> */}
-      {/* <Flexi/> */}
-      {/* <Manpower/> */}
-      {/* <NAPS/> */}
-      <NATS/>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
