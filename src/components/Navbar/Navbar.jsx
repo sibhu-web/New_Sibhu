@@ -27,23 +27,20 @@ const Navbar = () => {
         <li className="dropdown">
           <a href="#" >Services</a>
         <div className="dropdown-content">
-            <Link to="/staffing">Staffing Services</Link>
-            <Link to="/permanent-staffing">Permanent Staffing</Link>
-            <Link to="/apprenticeship">Apprenticeship Services</Link>
-            <Link to="/flexi-staffing"> Flexi Staffing</Link>
-            <Link to="/manpower">Manpower Outsourcing</Link>
-            <Link to="/naps">NAPS</Link>
-            <Link to="/nats">NATS</Link>
+            <Link to="services/staffing">Staffing Services</Link>
+            <Link to="services/permanent-staffing">Permanent Staffing</Link>
+            <Link to="services/apprenticeship">Apprenticeship Services</Link>
+            <Link to="services/flexi-staffing"> Flexi Staffing</Link>
+            <Link to="services/manpower">Manpower Outsourcing</Link>
+            <Link to="services/naps">NAPS</Link>
+            <Link to="services/nats">NATS</Link>
           </div>
         </li>
         <li>
-          <a href="##">Menu</a>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <a href="#$">Testimonial</a>
-        </li>
-        <li>
-          <a href="##">Contact</a>
+          <Link to="/register">Register Here</Link>
         </li>
       </ul>
       <h1 className="logo-navbar">Navbar</h1>
