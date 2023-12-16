@@ -1,14 +1,11 @@
- 
-import React from "react";
+ import React from "react";
 import "./Navbar.css";
-
+import { Outlet, Link } from "react-router-dom";
 const Navbar = () => {
 
   return (
     <>
-  <meta charSet="UTF-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Navbar</title>
   <nav className="navbar">
     <div className="navbar-container containerNav">
@@ -20,13 +17,24 @@ const Navbar = () => {
       </div>
       <ul className="menu-items">
         <li>
-          <a href="###">Home</a>
+          <Link to="/" >Home</Link>
+          {/* <a href="#">Home</a> */}
         </li>
         <li>
-          <a href="##">About</a>
+          <Link to="/about">About us</Link>
+          {/* <a href="#">About</a> */}
         </li>
-        <li>
-          <a href="##">Category</a>
+        <li className="dropdown">
+          <a href="#" >Services</a>
+        <div className="dropdown-content">
+            <Link to="/staffing">Staffing Services</Link>
+            <Link to="/permanent-staffing">Permanent Staffing</Link>
+            <Link to="/apprenticeship">Apprenticeship Services</Link>
+            <Link to="/flexi-staffing"> Flexi Staffing</Link>
+            <Link to="/manpower">Manpower Outsourcing</Link>
+            <Link to="/naps">NAPS</Link>
+            <Link to="/nats">NATS</Link>
+          </div>
         </li>
         <li>
           <a href="##">Menu</a>
@@ -40,6 +48,7 @@ const Navbar = () => {
       </ul>
       <h1 className="logo-navbar">Navbar</h1>
     </div>
+    <Outlet/>
   </nav>
 </>
 

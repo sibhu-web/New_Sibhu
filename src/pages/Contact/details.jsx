@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faMapMarkedAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 const Details = () => {
     return (  <div className="details">
+      <h3>Details of Members</h3>
         <div className="contact-info">
   <div className="card">
   <FontAwesomeIcon icon={faEnvelope} />

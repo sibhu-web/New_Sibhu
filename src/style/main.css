@@ -1,0 +1,9 @@
+.contact-body{
+    margin-top: 60px;
+}
+.contact-body h2{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+}
