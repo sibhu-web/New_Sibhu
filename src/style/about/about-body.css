@@ -171,17 +171,17 @@
     top: 5%;
     position:absolute;
 }
-.animate{
+.animate-about{
     position: relative;
     opacity: 0;
 }
-.animate.active{
+.animate-about.active-about{
     opacity: 1;
 }
-.active.fade-left{
-    animation: fade-left 1s ease-in;
+.active-about.fade-left-about{
+    animation: fade-left-about 1s ease-in;
 }
-@keyframes fade-left {
+@keyframes fade-left-about {
     0% {
       transform: translateX(-50px);
       opacity: 0;
@@ -191,7 +191,7 @@
       opacity: 1;
     }
   }
-.active.fade-left-fast{
+.active-about.fade-left-fast{
     animation: fade-left-fast 1s ease-in;
 }
 @keyframes fade-left-fast {

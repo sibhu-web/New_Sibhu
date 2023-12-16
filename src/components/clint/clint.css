@@ -1,6 +1,9 @@
 .container-clint{
-    width: 98%;
-    height: 50%;
+    width: 60%;
+    height: auto;
+    /* border: 1px solid rgb(135, 129, 129); */
+    margin:30px auto;
+    padding: 10px;
 }
 .carousel-wrap {
     margin: 90px auto;
@@ -8,7 +11,9 @@
     width: 80%;
     position: relative;
   }
-  
+  /* .clints-name{
+    background-color: rgb(187, 176, 176);
+  } */
   /* fix blank or flashing items on carousel */
   .owl-carousel .item {
     position: relative;

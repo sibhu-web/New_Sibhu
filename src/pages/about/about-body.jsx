@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 function Aboutbody() {
   const reveal = () => {
-    const animate = document.querySelectorAll(".animate");
+    const animate = document.querySelectorAll(".animate-about");
 
     for (let i = 0; i < animate.length; i++) {
       const windowHeight = window.innerHeight;
@@ -14,7 +14,7 @@ function Aboutbody() {
       const elementVisible = 100;
 
       if (elementTop < windowHeight - elementVisible) {
-        animate[i].classList.add("active");
+        animate[i].classList.add("active-about");
       }
       // else {
       //   animate[i].classList.remove("active");
@@ -34,7 +34,7 @@ function Aboutbody() {
 
   return (
     <section className="sec">
-      <div className="content animate fade-left active">
+      <div className="content animate-about fade-left-about active-about">
         <h2>ABOUT US</h2>
         <div className='heading-det'>
             <h2>Something Dynamically</h2>
@@ -62,7 +62,7 @@ function Aboutbody() {
           unde quos corporis!
         </p>
       </div>
-      <div className="content animate fade-left">
+      <div className="content animate-about fade-left-about">
       <div className='heading-det'>
             <h2>Our Story</h2>
         </div>
@@ -87,7 +87,7 @@ function Aboutbody() {
             <div className="name-1">Major cities</div>
             <div className="name-1">Across country</div>
         </div>
-        <div className="location-details-image animate fade-left-fast">
+        <div className="location-details-image animate-about fade-left-fast">
             <div className="box" id="bm1">
               City,State <br/>
               No. of centers<br/>

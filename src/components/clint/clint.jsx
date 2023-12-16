@@ -46,6 +46,10 @@ const Clint = () => {
             </div>
             <div className="clints-name">
               <h4>Item 3</h4>
+              <p>Content for item 2 goes here.</p>
+            </div>
+            <div className="clints-name">
+              <h4>Item 1</h4>
               <p>Content for item 1 goes here.</p>
             </div>
             <div className="clints-name">

@@ -1,9 +1,20 @@
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SwipeableViews from "react-swipeable-views";
 import "./home.css";
+import Footer from "../../components/footer/footer";
+import Clint from "../../components/clint/clint";
 
 const Home = () => {
+  useEffect(() => {
+    const screenHeight = window.innerHeight;
+    const desiredScrollPosition = screenHeight * 0; // Adjust the multiplier as needed
+
+    // Scroll to the calculated position
+    window.scrollTo({
+      top: desiredScrollPosition,
+      behavior: 'smooth',
+    });
+  }, []);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
@@ -16,6 +27,22 @@ const Home = () => {
   const handleChangeIndex = (index) => {
     setCurrentSlide(index);
   };
+
+  const handlePrevClick = () => {
+    handleChangeIndex((currentSlide - 1 + slides.length) % slides.length);
+  };
+
+  const handleNextClick = () => {
+    handleChangeIndex((currentSlide + 1) % slides.length);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      handleNextClick();
+    }, 5000); // Change the interval time as needed (in milliseconds)
+
+    return () => clearInterval(intervalId);
+  }, [currentSlide]);
 
   return (
     <main className="main-home-page">
@@ -39,42 +66,39 @@ const Home = () => {
       </SwipeableViews>
 
       <div className="about">
-     <a
-      className="bg_links social portfolio"
-      href="https://www.rafaelalucas.com"
-      target="__blank"
-    >
-      <span className="icon" />
-    </a>
-    <a
-      className="bg_links social dribbble"
-      href="https://dribbble.com/rafaelalucas"
-      target="__blank"
-    >
-      <span className="icon" />
-    </a>
-    <a
-      className="bg_links social linkedin"
-      href="https://www.linkedin.com/in/rafaelalucas/"
-      target="__blank"
-    >
-      <span className="icon" />
-    </a>
-    < div className="bg_links logo-nav"/>
-  </div>
+        <a
+          className="bg_links social portfolio"
+          href="https://www.rafaelalucas.com"
+          target="__blank"
+        >
+          <span className="icon" />
+        </a>
+        <a
+          className="bg_links social dribbble"
+          href="https://dribbble.com/rafaelalucas"
+          target="__blank"
+        >
+          <span className="icon" />
+        </a>
+        <a
+          className="bg_links social linkedin"
+          href="https://www.linkedin.com/in/rafaelalucas/"
+          target="__blank"
+        >
+          <span className="icon" />
+        </a>
+        <div className="bg_links logo-nav" />
+      </div>
 
-      <div
-        className="swiper-button-prev"
-        onClick={() => handleChangeIndex(currentSlide - 1)}
-      >
+      <div className="swiper-button-prev" onClick={handlePrevClick}>
         <span>&lt;</span>
       </div>
-      <div
-        className="swiper-button-next"
-        onClick={() => handleChangeIndex(currentSlide + 1)}
-      >
+      <div className="swiper-button-next" onClick={handleNextClick}>
         <span>&gt;</span>
       </div>
+          <Clint/>
+      <Footer />
+
     </main>
   );
 };

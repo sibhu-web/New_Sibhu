@@ -1,13 +1,35 @@
- import React from "react";
+ import React,{useState,useEffect} from "react";
 import "./Navbar.css";
 import { Outlet, Link } from "react-router-dom";
 const Navbar = () => {
+  const [isNavbarScroll, setNavbarScroll] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
 
+      // Adjust the value (200 in this case) based on when you want the navbar to become visible
+      if (scrollPosition > 0) {
+        setNavbarScroll(true);
+      } else {
+        setNavbarScroll(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <>
-
-  <title>Navbar</title>
-  <nav className="navbar">
+<>
+  <nav className="navbar" style={{
+    backgroundColor: isNavbarScroll ? '#fff' : 'transparent',
+    boxShadow: isNavbarScroll ? ' 0px 5px 10px 0px #aaa' : '0 8px 30px 0 rgba(0,0,0,0)',
+  }}>
+    <title>Navbar</title>
     <div className="navbar-container containerNav">
       <input type="checkbox" name="" id="" />
       <div className="hamburger-lines">
@@ -48,7 +70,6 @@ const Navbar = () => {
   </nav>
     <Outlet/>
 </>
-
   );
 };
 
