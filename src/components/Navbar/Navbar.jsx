@@ -45,8 +45,8 @@ const Navbar = () => {
       </ul>
       <h1 className="logo-navbar">Navbar</h1>
     </div>
-    <Outlet/>
   </nav>
+    <Outlet/>
 </>
 
   );
