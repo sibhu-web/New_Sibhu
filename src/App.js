@@ -1,8 +1,10 @@
 import './App.css';
+import NAPS from './pages/services/NAPS/NAPS';
+import NATS from './pages/services/NATS/NATS';
 // import About from './pages/about/about';
-import Apprenticeship from './pages/services/apprenticeship/apprenticeship';
-import Flexi from './pages/services/flexi-staffing/flexi';
-import Manpower from './pages/services/manpower-outsourcing/manpower';
+// import Apprenticeship from './pages/services/apprenticeship/apprenticeship';
+// import Flexi from './pages/services/flexi-staffing/flexi';
+// import Manpower from './pages/services/manpower-outsourcing/manpower';
 import Permanent from './pages/services/permanent-staffing/permanent';
 // import Staffing from './pages/services/staffing/staffing';
 
@@ -13,7 +15,9 @@ function App() {
       {/* <Staffing/> */}
       {/* <Permanent/> */}
       {/* <Flexi/> */}
-      <Manpower/>
+      {/* <Manpower/> */}
+      {/* <NAPS/> */}
+      <NATS/>
     </div>
   );
 }
