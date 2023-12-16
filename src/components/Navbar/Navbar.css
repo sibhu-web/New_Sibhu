@@ -52,6 +52,7 @@
 .menu-items{
     order: 2;
     display: flex;
+    overflow: visible !important;
 }
 .logo{
     order: 1;

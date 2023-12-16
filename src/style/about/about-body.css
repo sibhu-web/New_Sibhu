@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Caveat:wght@400;500;600&family=Crimson+Pro:wght@300&family=Dancing+Script:wght@400;500;600&family=Indie+Flower&family=Kalnia:wght@300&family=Mina&family=Nova+Square&family=Pacifico&family=Rubik&family=Shadows+Into+Light&family=Sono:wght@200;500&display=swap');
 .sec{
     width: 100%;
-    overflow-x: hidden ;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
