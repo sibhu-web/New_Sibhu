@@ -3,7 +3,15 @@ import "./Navbar.css";
 import { Outlet, Link } from "react-router-dom";
 const Navbar = () => {
   const [isNavbarScroll, setNavbarScroll] = useState(false);
-  
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const handleMobileMenuToggle = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -31,38 +39,39 @@ const Navbar = () => {
   }}>
     <title>Navbar</title>
     <div className="navbar-container containerNav">
-      <input type="checkbox" name="" id="" />
+      <input type="checkbox" name="" id="" checked={isMobileMenuOpen}
+            onChange={handleMobileMenuToggle}/>
       <div className="hamburger-lines">
         <span className="line line1" />
         <span className="line line2" />
         <span className="line line3" />
       </div>
-      <ul className="menu-items">
+      <ul className={`menu-items ${isMobileMenuOpen ? "open" : ""}`}>
         <li>
-          <Link to="/" >Home</Link>
+          <Link to="/" onClick={closeMobileMenu} >Home</Link>
           {/* <a href="#">Home</a> */}
         </li>
         <li>
-          <Link to="/about">About us</Link>
+          <Link to="/about" onClick={closeMobileMenu}>About us</Link>
           {/* <a href="#">About</a> */}
         </li>
         <li className="dropdown">
           <a href="#" >Services</a>
         <div className="dropdown-content">
-            <Link to="services/staffing">Staffing Services</Link>
-            <Link to="services/permanent-staffing">Permanent Staffing</Link>
-            <Link to="services/apprenticeship">Apprenticeship Services</Link>
-            <Link to="services/flexi-staffing"> Flexi Staffing</Link>
-            <Link to="services/manpower">Manpower Outsourcing</Link>
-            <Link to="services/naps">NAPS</Link>
-            <Link to="services/nats">NATS</Link>
+            <Link to="services/staffing" onClick={closeMobileMenu}>Staffing Services</Link>
+            <Link to="services/permanent-staffing" onClick={closeMobileMenu}>Permanent Staffing</Link>
+            <Link to="services/apprenticeship" onClick={closeMobileMenu}>Apprenticeship Services</Link>
+            <Link to="services/flexi-staffing" onClick={closeMobileMenu}> Flexi Staffing</Link>
+            <Link to="services/manpower" onClick={closeMobileMenu}>Manpower Outsourcing</Link>
+            <Link to="services/naps" onClick={closeMobileMenu}>NAPS</Link>
+            <Link to="services/nats" onClick={closeMobileMenu}>NATS</Link>
           </div>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" onClick={closeMobileMenu}>Contact</Link>
         </li>
         <li>
-          <Link to="/register">Register Here</Link>
+          <Link to="/register" onClick={closeMobileMenu}>Register Here</Link>
         </li>
       </ul>
       <h1 className="logo-navbar">Navbar</h1>
