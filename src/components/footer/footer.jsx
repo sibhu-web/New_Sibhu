@@ -199,7 +199,7 @@ const Footer = () => {
         <p className="footer-copyright-text">
           <a className="footer-copyright-link" href="#########" target="_self">
             {" "}
-            ©2020. | Designed By: Pooja Nahelia. | All rights reserved.{" "}
+            ©2020. | Designed By: Shivam and Nishant. | All rights reserved.{" "}
           </a>
         </p>
       </div>

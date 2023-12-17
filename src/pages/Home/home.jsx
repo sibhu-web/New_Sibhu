@@ -68,21 +68,21 @@ const Home = () => {
       <div className="about">
         <a
           className="bg_links social portfolio"
-          href="https://www.rafaelalucas.com"
+          href="https://www.facebook.com"
           target="__blank"
         >
           <span className="icon" />
         </a>
         <a
           className="bg_links social dribbble"
-          href="https://dribbble.com/rafaelalucas"
+          href="https://github.com/sibhu-web/New_Sibhu"
           target="__blank"
         >
           <span className="icon" />
         </a>
         <a
           className="bg_links social linkedin"
-          href="https://www.linkedin.com/in/rafaelalucas/"
+          href="https://www.linkedin.com"
           target="__blank"
         >
           <span className="icon" />

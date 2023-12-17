@@ -81,7 +81,7 @@
     width: 40px;
     height: 40px;
     z-index: 9;
-    background-image: url(https://rafaelalucas91.github.io/assets/codepen/logo_white.svg);
+    background-image: url('../../../public/images/social-media.png');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 10px 7px;
@@ -111,19 +111,19 @@
     transition: all 0.8s ease;
   }
   .about .social.portfolio .icon {
-    background-image: url(https://rafaelalucas91.github.io/assets/codepen/link.svg);
+    background-image: url('../../../public/images/5279111_network_fb_social\ media_facebook_facebook\ logo_icon.png');
   }
   .about .social.dribbble {
     transition: all 0.3s ease;
   }
   .about .social.dribbble .icon {
-    background-image: url(https://rafaelalucas91.github.io/assets/codepen/dribbble.svg);
+    background-image: url('../../../public/images/291716_github_logo_social\ network_social_icon.png');
   }
   .about .social.linkedin {
     transition: all 0.8s ease;
   }
   .about .social.linkedin .icon {
-    background-image: url(https://rafaelalucas91.github.io/assets/codepen/linkedin.svg);
+    background-image: url('../../../public/images/5279114_linkedin_network_social\ network_linkedin\ logo_icon.png');
   }
   .about:hover {
     width: 105px;
