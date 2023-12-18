@@ -25,12 +25,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Project
-        run: npm run build  # Adjust this to your build script
-
-      - name: Deploy to Firebase Hosting
+      - name: Build and Deploy to Firebase Hosting
         run: |
-          npx firebase deploy --only hosting --project staffing-services-website --token "${{ secrets.FIREBASE_TOKEN }}"
+          npm run build
+          firebase deploy --only hosting --project staffing-services-website --token "${{ secrets.FIREBASE_TOKEN }}"
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-
